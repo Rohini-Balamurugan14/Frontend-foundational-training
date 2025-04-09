@@ -1,0 +1,38 @@
+/* ! 1. Descendent Selector */
+.lower__container p {
+    color: green;
+}
+
+.upper__container p {
+    color: yellow;
+}
+
+/* ! 2. Direct Child Selector */
+.upper__container > p {
+    color: red;
+} 
+
+.upper__container > .upper__childcontainer > p {
+    color: blueviolet;
+}
+
+.lower__container > #para1 {
+    color: blue;
+}
+
+.lower__container > button {
+    color: red;
+    background-color: aqua;
+}
+
+/* ! 3. Adjacent Sibling */
+.lower__container > #para1 + p {
+    background-color: aqua;
+    color: black;
+}
+
+/* ! 4. General Sibling */
+.lower__container > #para1 ~ p {
+    background-color: black;
+    color: white;
+}
