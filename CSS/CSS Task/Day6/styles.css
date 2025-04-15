@@ -36,22 +36,17 @@ h2 {
 }
 
 /* ?---COMBINATOR SELECTOR---- */
-/* ! 1. Descendent Selector */
-/* #projects p {
-    color:darkblue
-}  */
-
-/* ! 2. Direc-child Selector */
+/* ! 1. Direc-child Selector */
 #projects > h2 {
     color: purple
 }
 
-/* ! 3. Adjacent sibling Selector */
+/* ! 2. Adjacent sibling Selector */
 #projects > .project-card > h3 + p  {
     color: black;
 }
 
-/* ! 4. General sibling Selector */
+/* ! 3. General sibling Selector */
 #projects > .project-card > h3 ~ p {
     color:darkred;
 }
@@ -72,11 +67,11 @@ footer > p > a:active {
     background: green;
 }
 
-.main-nav > ul > li:first-child {
+.main-nav ul > li:first-child {
     background-color: aqua;
 }
 
-.main-nav > ul > li:last-child {
+.main-nav ul > li:last-child {
     background-color: cadetblue;
 }
 
