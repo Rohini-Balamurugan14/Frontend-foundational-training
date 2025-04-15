@@ -17,12 +17,7 @@ p {
     color: blue;
 }
 
-/* ! 4. Universal Selector
-* {
-    color: black;
-} */
-
 /* ! 5. Group Selector */
-.para, #para3{
+.para, #para3 {
     color: yellow;
 }

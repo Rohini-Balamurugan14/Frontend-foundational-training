@@ -5,8 +5,8 @@ ul {
 
 /* ?---VARIABLE---- */
 :root {
-    --primary:#008000;
-    --secondary:#FFFF00;
+    --primary: #008000;
+    --secondary: #FFFF00;
 }
 
 body {
@@ -117,9 +117,6 @@ a[href] {
     color: red;
 }
 
-a[target="_blank"]{
+a[target="_blank"] {
     color: black;
 }
-
-/* ?---VARIABLE---- */
-

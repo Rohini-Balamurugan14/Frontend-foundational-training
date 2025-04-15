@@ -37,7 +37,7 @@
     color: green;
 }
 
-.container-3 > ul > li:nth-child(3){
+.container-3 > ul > li:nth-child(3) {
     color: yellow;
 }
 
