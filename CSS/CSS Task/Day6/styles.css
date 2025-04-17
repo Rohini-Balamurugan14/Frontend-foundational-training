@@ -1,0 +1,117 @@
+ul {
+    display: flex;
+    gap: 20px;
+}
+
+/* ?---VARIABLE---- */
+:root {
+    --primary: #008000;
+    --secondary: #FFFF00;
+}
+
+body {
+    background-color: var(--secondary);
+}
+
+/* ?---SIMPLE SELECTOR----- */
+/* ! 1. Tagname Selector */
+h2 {
+    color: red;
+}
+
+/* ! 2. Id Selector */
+#about {
+    color: green;
+}
+
+/* ! 3. Class Selector */
+.project-card {
+    background-color: antiquewhite;
+}
+
+/* ! 4. Group Selector */
+#projects, #about {
+    background-color: azure;
+    border: 1px solid black;
+}
+
+/* ?---COMBINATOR SELECTOR---- */
+/* ! 1. Direc-child Selector */
+#projects > h2 {
+    color: purple
+}
+
+/* ! 2. Adjacent sibling Selector */
+#projects > .project-card > h3 + p  {
+    color: black;
+}
+
+/* ! 3. General sibling Selector */
+#projects > .project-card > h3 ~ p {
+    color:darkred;
+}
+
+/* ?---PSEUDOCLASS SELECTOR---- */
+footer > p > a {
+    background-color: rgb(177, 252, 27);
+    color:hotpink;
+}
+
+footer > p > a:hover {
+    background-color: blue;
+    color: white;
+}
+
+footer > p > a:active {
+    color: white;
+    background: green;
+}
+
+.main-nav ul > li:first-child {
+    background-color: aqua;
+}
+
+.main-nav ul > li:last-child {
+    background-color: cadetblue;
+}
+
+#projects > .project-card > p:first-of-type {
+    color:Black ;
+}
+
+#projects > .project-card > p:last-of-type {
+    color: rgb(245, 8, 87);
+}
+
+#projects > .project-card > p:nth-child(2n) {
+    color: yellowgreen;
+}
+
+#projects > .project-card > p:nth-child(2n-1) {
+    color: green;
+}
+
+/* ?---PSEUDOELEMENT SELECTOR--- */
+#about > h2::before {
+    content: "NEWLY ADDED CONTENT USING BEFORE ";
+    color: black;
+}
+
+#about > h2::after {
+    content: " NEWLY ADDED CONTENT USING AFTER";
+    color: black;
+}
+
+::selection {
+    background-color: black;
+    color: white;
+}
+
+/* ?---ATTRIBUTE SELECTOR--- */
+a[href] {
+    color: red;
+}
+
+a[target="_blank"] {
+    color: black;
+}

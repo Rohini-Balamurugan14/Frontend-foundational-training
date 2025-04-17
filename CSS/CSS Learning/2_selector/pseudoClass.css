@@ -1,0 +1,50 @@
+.container-1 > button {
+    background-color: rgb(212, 255, 0);
+    color: white;
+}
+
+.container-1 > button:hover {
+    color: blue;
+}
+
+.container-1 > button:active {
+    background-color: green;
+}
+
+.container-2 > h1:first-child {
+    color: red;
+}
+
+/* no change here */
+.container-2 > p:first-child {
+    color: blue;
+}
+
+/* no change here */
+.container-2 > h1:last-child {
+    color: blue;
+}
+
+.container-2 > p:last-child {
+    color: blue;
+}
+
+.container-2 > p:first-of-type {
+    color: green;
+}
+
+.container-2 > p:last-of-type {
+    color: green;
+}
+
+.container-3 > ul > li:nth-child(3) {
+    color: yellow;
+}
+
+.container-3 > ul > li:nth-child(2n) {
+    color: blue;
+}
+
+.container-3 > ul > li:nth-child(2n-1) {
+    color: brown;
+}

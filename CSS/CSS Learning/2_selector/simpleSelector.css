@@ -1,0 +1,23 @@
+/* ! 1. Tagname Selector */
+h1 {
+    color: red;
+}
+
+p {
+    color: green;
+}
+
+/* ! 2. Id Selector */
+#para3 {
+    color: bisque;
+}
+
+/* ! 3. Class Selector */
+.para {
+    color: blue;
+}
+
+/* ! 5. Group Selector */
+.para, #para3 {
+    color: yellow;
+}

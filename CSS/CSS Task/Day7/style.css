@@ -1,0 +1,152 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    position: relative;
+    height: 200vh;
+}
+
+nav {
+    width: 100%;
+    height: auto;
+    padding: 3px 20px;
+    text-align: center;
+    border: 1px solid red;
+    background-color: blanchedalmond;
+    position: sticky;
+    top: 0;
+}
+
+nav > h1 {
+    display: inline-block;
+    text-align: left;
+    color: blueviolet;
+    font-size: 3em;
+}
+
+nav > ul {
+    display: inline-block;
+    margin-left: 50%;
+}
+
+nav > ul > li {
+    display: inline-block;
+    padding: 15px 10px;
+    font-size: 2em;
+    color: blue;
+    text-decoration: underline green 5px;
+    cursor: pointer;
+}
+
+nav > ul > li:hover {
+    color: red;
+}
+
+section {
+    width: 100%;
+    font-size: 0;
+}
+
+.product {
+    width: 23%;
+    height: auto;
+    margin: 2% 1%;
+    padding: 10px 20px;
+    display: inline-block;
+    border: 2px solid black;
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+    margin-top: 8%;
+}
+
+.product .product__name {
+    margin-top: 5%;
+    font-size: 2rem;
+    color: red;
+    text-align: center;
+}
+
+.product .product__description {
+    margin-top: 5%;
+    font-size: 20px;
+    text-align: justify;
+    text-indent: 1em;
+    color: blueviolet;
+}
+
+.product .price {
+    margin-top: 5%;
+    margin-left: 5%;
+    text-align: left;
+}
+
+.product .price .old__price {
+    display: inline-block;
+    font-size: 2rem;
+    margin-right: 4%;
+    text-decoration: line-through red 5px;
+}
+
+.product .price .new__price {
+    display: inline-block;
+    font-size: 3rem;
+    color: red;
+    margin-right: 4%;
+}
+
+.product .tooltip__container {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.icon {
+    font-size: 2rem;
+    color: white;
+    border: 1px solid black;
+    border-radius: 50%;
+    padding: 0 12px;
+    background-color: black;
+    cursor: pointer;
+}
+
+.tooltip__text {
+    position: absolute;
+    color:black;
+    left: 95%;
+    bottom: 0%;
+    display: none;
+    font-size: 1rem;
+    border: 2px solid black;
+    width: 350%;
+}
+
+.tooltip__container:hover .tooltip__text {
+    display: block;
+}
+
+.product .cart {
+    margin-top: 5%;
+    border: 3px solid black;
+    padding: 10px 30px;
+    font-size: 20px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.product .cart:hover {
+    background-color: black;
+    color: white;
+}
+
+aside {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
