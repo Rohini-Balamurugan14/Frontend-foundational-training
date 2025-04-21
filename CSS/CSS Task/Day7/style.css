@@ -119,7 +119,7 @@ section {
 .tooltip__text {
     position: absolute;
     color:black;
-    left: 95%;
+    right: 0;
     bottom: 0%;
     display: none;
     font-size: 1rem;
