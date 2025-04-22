@@ -14,7 +14,6 @@ body {
     display: flex;
     flex-direction: column;
     gap: 2rem;
-
 }
 
 nav {
@@ -29,7 +28,7 @@ nav {
     border-radius: 5%;
     position: sticky;
     top: 0;
-    /* z-index: 1000; */
+    flex-wrap: wrap;
 }
 
 .nav__title {
@@ -37,12 +36,14 @@ nav {
     font-weight: bold;
     font-size: 2.5rem;
     color: rgba(208, 223, 223, 0.977);
+    flex: 1 0 50%;
 }
 
 .nav__menu {
     display: flex;
     gap: 20px;
-    justify-content: space-between;
+    justify-content: space-around;
+    flex-grow: 1;
 }
 
 .nav__menu li {
@@ -66,15 +67,15 @@ section {
 
 .product__row {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     padding: 20px;
     background-color: var(--secondary);
+    flex-wrap: wrap;
+    gap: 2rem;
 }
 
 .product__card {
-    width: 23%;
-    height: auto;
     border: 2px solid black;
     padding: 20px;
     display: flex;
@@ -82,6 +83,7 @@ section {
     justify-content: space-between;
     gap: 1rem;
     align-items: center;
+    flex: 1 1 23%;
 }
 
 .product__card img {
