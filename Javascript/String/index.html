@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String</title>
+    <script src="script.js"></script>
+</head>
+<body>
+    <label>Enter String1</label>
+    <input type="text" id="string1" name="string1"> <br> <br>
+    <label>Enter String2</label>
+    <input type="text" id="string2"> <br><br>
+
+    <button onclick="calcLength()">length</button> <br><br>
+    <button onclick="toUpper()">toUpperCase</button> <br><br>
+    <button onclick="toLower()">toLowerCase</button> <br><br>
+
+    <button onclick="calcCharAt()">charAt</button> 
+    <input type="number" id="position" placeholder="Enter position for charAt"> <br><br>
+
+    <button onclick="calcIndexOf()">indexOf</button>
+    <input type="text" id="character1" placeholder="Enter the character for indexof" min="1" max="1"> <br><br>
+
+    <button onclick="calcLastIndexOf()">lastIndexOf</button>
+    <input type="text" id="character2" placeholder="Enter the charcter fro lastindexof" min="1" max="1"> <br><br>
+
+    <button onclick="concatenating()">concat</button> <br><br>  
+    
+    <button onclick="trimString()">trim</button> <br><br>
+
+    <button onclick="findIncludes()">includes</button>
+    <input type="text" id="includes" placeholder="Enter included string"> <br><br>
+
+    <button onclick="findStartsWith()">startsWith</button>
+    <input type="text" id="startsWith" placeholder="Enter start string"> <br><br>
+    
+    <button onclick="findEndsWith()">endsWith</button>
+    <input type="text" id="endsWith" placeholder="Enter end string"> <br><br>
+
+    <button onclick="findSplit()">split</button>
+    <input type="text" id="split" placeholder="Enter string"> <br><br>
+    
+    <button onclick="findSlice()">slice</button>
+    <button onclick="findSubstring()">substring</button>
+    <input type="number" id="startindex" placeholder="Enter startindex"> 
+    <input type="number" id="endindex" placeholder="Enter endindex"> <br><br>
+
+    <!-- <button onclick="findSubstring">substring</button> -->
+    
+    <input type="text" id="display"> <br><br>
+
+    <button onclick="clearFields()">Reset</button>
+</body>
+</html>
