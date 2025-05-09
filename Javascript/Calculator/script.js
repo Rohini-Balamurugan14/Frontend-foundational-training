@@ -21,11 +21,15 @@ function setOperator(operator) {
 
         inputString = "";
     }
+
     currentOperator = operator;
 }
 
 function calculate() {
-    if (inputString === "") return;
+    if (inputString === "") {
+        return;
+    }
+
     if (currentOperator !== undefined && inputNumber1 !== undefined) {
         inputNumber2 = parseFloat(inputString);
         inputNumber1 = performCalculation(inputNumber1, inputNumber2, currentOperator);
@@ -33,15 +37,34 @@ function calculate() {
         inputString = "";
         currentOperator = undefined;
     }
+
 }
 
 function performCalculation(inputNumber1, inputNumber2, operator) {
     switch (operator) {
-        case '+': return inputNumber1 + inputNumber2;
-        case '-': return inputNumber1 - inputNumber2;
-        case '*': return inputNumber1 * inputNumber2;
-        case '/': return inputNumber2 !== 0 ? inputNumber1/inputNumber2 : "Error";
-        default: return inputNumber2;
+        case '+': {
+            return inputNumber1 + inputNumber2;
+            break;
+        }
+
+        case '-': {
+            return inputNumber1 - inputNumber2;
+            break;
+        }
+
+        case '*': {
+            return inputNumber1 * inputNumber2;
+            break;
+        }
+
+        case '/': {
+            return inputNumber2 !== 0 ? inputNumber1/inputNumber2 : "Error";
+            break;
+        }
+
+        default: { 
+            return inputNumber2;
+        }
     }
 }
 

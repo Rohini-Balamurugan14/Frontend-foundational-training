@@ -6,19 +6,20 @@
     <title>Document</title>
     <script>
         window.onload = function() {
-        const input = document.getElementById("numberBox");
+            const input = document.getElementById("numberBox");
         
-        input.addEventListener('keydown', function(event) {
-            let currentValue = parseInt(input.value) || 0;
+            input.addEventListener('keydown', function(event) {
+                let currentValue = parseInt(input.value) || 0;
 
-            if(event.key === 'ArrowUp') {
-                input.value = currentValue + 1;
-                event.preventDefault();
-            } else if (event.key === 'ArrowDown') {
-                input.value = currentValue - 1;
-                event.preventDefault();
-            }
-        });}
+                if (event.key === 'ArrowUp') {
+                    input.value = currentValue + 1;
+                    event.preventDefault();
+                } else if (event.key === 'ArrowDown') {
+                    input.value = currentValue - 1;
+                    event.preventDefault();
+                }
+            });
+        }
     </script>
 </head>
 <body>

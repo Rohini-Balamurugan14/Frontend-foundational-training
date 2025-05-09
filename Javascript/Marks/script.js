@@ -33,12 +33,13 @@ function calculateTopper() {
 
     students.forEach((student) => {
         student.marks.forEach((mark, index) => {
-            if(mark > toppers[index].marks) {
-                toppers[index].marks = mark
-                toppers[index].name = student.name
-            }            
-        })
-    })
+            if (mark > toppers[index].marks) {
+                toppers[index].marks = mark;
+                toppers[index].name = student.name;
+            } 
+
+        });
+    });
 
     const tbody = document.getElementById('topper-table').querySelector('tbody');
     tbody.innerHTML = "";
@@ -59,7 +60,7 @@ function calculateTopper() {
         row.appendChild(markCell);
 
         tbody.appendChild(row);
-    })
+    });
 }
 
 function displayGrade() {
@@ -96,5 +97,5 @@ function displayGrade() {
         row.appendChild(resultCell);
 
         tbody.appendChild(row);
-    })
+    });
 }
