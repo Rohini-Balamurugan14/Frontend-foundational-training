@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marks Application</title>
+    <script src="script.js"></script>
+</head>
+<body>
+    <form id="markform" onsubmit="handleSubmit(event)">
+        <label for="name">Name</label>
+        <input type="text" id="name" required> <br><br>
+
+        <label for="english">English:</label>
+        <input type="number" id="english" required><br><br>
+
+        <label for="tamil">Tamil:</label>
+        <input type="number" id="tamil" required><br><br>
+
+        <label for="maths">Maths:</label>
+        <input type="number" id="maths" required><br><br>
+
+        <label for="science">Science:</label>
+        <input type="number" id="science" required><br><br>
+
+        <label for="social">Social:</label>
+        <input type="number" id="social" required><br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+
+    <table id="topper-table">
+        <thead>
+            <tr>
+                <th>Subject</th>
+                <th>Topper</th>
+                <th>Marks</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <table id="grade-table">
+        <thead>
+            <tr>
+                <th>Student</th>
+                <th>English</th>
+                <th>Tamil</th>
+                <th>Maths</th>
+                <th>Science</th>
+                <th>Social</th>
+                <th>Result</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+</body>
+</html>
