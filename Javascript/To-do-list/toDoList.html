@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do-App</title>
+    <style>
+        .outer {
+            background: rgb(171, 190, 197);
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #title {
+            font: 1.5em bold black;
+        }
+
+        .inner {
+            background: rgb(177, 181, 180);
+            width: 40%;
+            height: auto;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #input-field {
+            width: 90%;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            height: auto;
+            margin-top: 5%;
+            padding: 2px;
+        }
+
+        #input-text {
+            width: 90%;
+            font-size: 1rem;
+            line-height: 2rem;
+        }
+
+        input::placeholder {
+            font-style: italic;
+            font-size: 1rem;
+        }
+
+        .fa-square-plus {
+            font-size: 2.5rem;
+            color: blue;
+        } 
+
+        #task-field {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 3% 1%;
+            width: 90%;
+        }
+
+        #task-field > .task-item {
+            background-color: aliceblue;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            width: 100%;
+            height: auto;
+            margin-top: 2%;
+        }
+
+        .task-item > p {
+            font-size: 1.5rem;
+            color: rgb(116, 7, 7);
+            width: 70%;
+            padding: 2px 5px;
+            margin: 0;
+        }
+
+        .fa-circle-check {
+            font-size: 1.5rem;
+            color: green;
+        }
+
+        .fa-trash {
+            font-size: 1.5rem;
+            color: red;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <script src="toDoList.js"></script>
+</head>
+<body>
+    <div class="outer">
+        <div id="title">
+            <h1>To Do App</h1>
+        </div>
+        <div class="inner">
+            <div id="input-field">
+                <input type="text" placeholder="Enter your task" id="input-text">
+                <i class="fa-solid fa-square-plus" onclick="addTask()"></i>
+            </div>
+            <div id="task-field">
+                <div id="task-1" class="task-item">
+                    <p id="name-1">Cooking</p>
+                    <i class="fa-solid fa-circle-check" id="tick-1" onclick="strikeTask(this)"></i>
+                    <i class="fa-solid fa-trash" id="delete-1" onclick="deleteTask(this)"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
